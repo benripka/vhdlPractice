@@ -34,6 +34,7 @@ architecture structure of nBitAdder is
             fullAdder_i : adder port map(a(i), b(i), intermediateCarry(i), sum(i), intermediateCarry(i + 1));
         end generate;
         fullAdder_n : adder port map(a(n-1), b(n-1), intermediateCarry(n-1), sum(n-1), cout);
+    
     end structure;
 
 
