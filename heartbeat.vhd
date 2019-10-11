@@ -1,5 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use std.textio.all;
 
 entity heartbeat is 
     port(clk: out std_logic);
@@ -14,5 +15,6 @@ begin
         wait for clk_period/2;
         clk  <= '1';
         wait for clk_period/2;
+        write("hello");
     end process;
 end behaviour;  
