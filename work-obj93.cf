@@ -1,7 +1,13 @@
 v 3
-file . "adder_tb.vhd" "20191011005830.000" "20191010185837.561":
-  entity adder_tb at 2( 2) + 0 on 23;
-  architecture behav of adder_tb at 5( 47) + 4 on 24;
-file . "adder.vhd" "20191011005512.000" "20191010185835.444":
-  entity adder at 1( 0) + 0 on 21;
-  architecture rtl of adder at 7( 225) + 2 on 22;
+file . "nBitAdder_tb.vhd" "20191011024314.000" "20191010204315.635":
+  entity nbitadder_tb at 1( 0) + 0 on 39;
+  architecture behaviour of nbitadder_tb at 7( 93) + 0 on 40;
+file . "nBitAdder.vhd" "20191011015144.000" "20191010204256.252":
+  entity nbitadder at 1( 0) + 0 on 37;
+  architecture structure of nbitadder at 17( 306) + 0 on 38;
+file . "adder.vhd" "20191011013630.000" "20191010194434.783":
+  entity adder at 1( 0) + 0 on 33;
+  architecture rtl of adder at 10( 296) + 2 on 34;
+file . "adder_tb.vhd" "20191011013944.000" "20191010193951.678":
+  entity adder_tb at 1( 0) + 0 on 27;
+  architecture behav of adder_tb at 7( 92) + 4 on 28;

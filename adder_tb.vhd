@@ -1,3 +1,5 @@
+library ieee;
+use ieee.std_logic_1164.all;
 
 entity adder_tb is
     end adder_tb;
@@ -5,12 +7,12 @@ entity adder_tb is
     architecture behav of adder_tb is
       --  Declaration of the component that will be instantiated.
       component adder
-        port (i0, i1 : in bit; ci : in bit; s : out bit; co : out bit);
+        port (i0, i1 : in std_logic; ci : in std_logic; s : out std_logic; co : out std_logic);
       end component;
     
       --  Specifies which entity is bound with the component.
       for adder_0: adder use entity work.adder;
-      signal i0, i1, ci, s, co : bit;
+      signal i0, i1, ci, s, co : std_logic;
     begin
       --  Component instantiation.
       adder_0: adder port map (i0 => i0, i1 => i1, ci => ci,
@@ -20,9 +22,9 @@ entity adder_tb is
       process
         type pattern_type is record
           --  The inputs of the adder.
-          i0, i1, ci : bit;
+          i0, i1, ci : std_logic;
           --  The expected outputs of the adder.
-          s, co : bit;
+          s, co : std_logic;
         end record;
         --  The patterns to apply.
         type pattern_array is array (natural range <>) of pattern_type;
