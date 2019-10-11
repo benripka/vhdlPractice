@@ -2,3 +2,9 @@ v 3
 file . "heartbeat.vhd" "20191010234806.000" "20191010175710.600":
   entity heartbeat at 1( 0) + 0 on 11;
   architecture behaviour of heartbeat at 8( 118) + 0 on 12;
+file . "fullAdder.vhd" "20191011004126.000" "20191010184257.936":
+  entity adder at 2( 2) + 0 on 15;
+  architecture rtl of adder at 7( 208) + 0 on 16;
+file . "adder_tb.vhd" "20191011004328.000" "20191010184332.598":
+  entity adder_tb at 1( 0) + 0 on 19;
+  architecture behaviour of adder_tb at 4( 37) + 0 on 20;
